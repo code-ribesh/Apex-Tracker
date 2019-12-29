@@ -1,0 +1,25 @@
+{
+  "name": "apex-tracker",
+  "version": "1.0.0",
+  "description": "apex tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Ribesh Basnet",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "yarn": "^1.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
